@@ -13,6 +13,7 @@ function CityItem({ city }) {
 
 	return (
 		<li>
+			{/* The id is the data that we want to pass from one page to another using URL parameters */}
 			<Link className={styles.cityItem} to={`${id}`}>
 				<span className={styles.emoji}>{emoji}</span>
 				<h3 className={styles.name}>{cityName}</h3>

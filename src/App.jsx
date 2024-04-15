@@ -50,6 +50,7 @@ function App() {
 						path="cities"
 						element={<CityList cities={cities} isLoading={isLoading} />}
 					/>
+					{/* If the URL takes the (PATH SHAPE), it will store the data from the <Link /> (reference: <CityItem />) in the :id and the :id will basically be passed to <City /> */}
 					<Route path="cities/:id" element={<City />} />
 
 					<Route
