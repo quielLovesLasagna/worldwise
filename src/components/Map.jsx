@@ -2,6 +2,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import styles from "./Map.module.css";
 
 function Map() {
+	// "Imperative" way of navigating to a route without using any link
 	const navigate = useNavigate();
 
 	// This is for QUERY STRINGS

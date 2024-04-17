@@ -42,6 +42,7 @@ function App() {
 				<Route path="pricing" element={<Pricing />} />
 				<Route path="login" element={<Login />} />
 				<Route path="app" element={<AppLayout />}>
+					{/* "Declarative" way of navigating to a route without using any link */}
 					<Route index element={<Navigate replace to="cities" />} />
 					<Route
 						path="cities"
