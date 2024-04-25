@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./CityItem.module.css";
+import { useCities } from "../contexts/CitiesContext";
 
 const formatDate = (date) =>
 	new Intl.DateTimeFormat("en", {
@@ -9,6 +10,7 @@ const formatDate = (date) =>
 	}).format(new Date(date));
 
 function CityItem({ city }) {
+	const { currentCity } = useCities();
 	const { cityName, emoji, date, id, position } = city;
 
 	return (
@@ -16,7 +18,9 @@ function CityItem({ city }) {
 			{/* The id is the data that we want to pass from one page to another using URL parameters */}
 			{/* After the id parameter is a query string after ?. lat and lng are simple variable names or we can think of it as parameters */}
 			<Link
-				className={styles.cityItem}
+				className={`${styles.cityItem} ${
+					id === currentCity.id ? styles["cityItem--active"] : ""
+				}`}
 				to={`${id}?lat=${position.lat}&lng=${position.lng}`}
 			>
 				<span className={styles.emoji}>{emoji}</span>
