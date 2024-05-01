@@ -35,42 +35,6 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
-    },
-    {
-      "cityName": "Dingwall",
-      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
-      "emoji": "🇬🇧",
-      "date": "2024-04-30T13:48:50.502Z",
-      "notes": "sasasa",
-      "position": {
-        "lat": "57.72526475180404",
-        "lng": "-4.438476562500001"
-      },
-      "id": 98443198
-    },
-    {
-      "cityName": "Soturac",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2024-04-30T13:56:03.887Z",
-      "notes": "hello",
-      "position": {
-        "lat": "44.480202882576464",
-        "lng": "1.0546875000000002"
-      },
-      "id": 98443199
-    },
-    {
-      "cityName": "Tchirozerine",
-      "country": "Niger (the)",
-      "emoji": "🇳🇪",
-      "date": "2024-04-30T14:04:53.014Z",
-      "notes": "sasa",
-      "position": {
-        "lat": "16.59643019688803",
-        "lng": "9.843750000000002"
-      },
-      "id": 98443200
     }
   ]
 }
