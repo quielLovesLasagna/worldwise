@@ -14,7 +14,6 @@ const formatDate = (date) =>
 	}).format(new Date(date));
 
 function City() {
-	// To get the data from the URL (route parameter) we use useParamas() hook
 	const { id } = useParams();
 	const { getCity, currentCity, isLoading } = useCities();
 

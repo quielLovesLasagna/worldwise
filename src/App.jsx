@@ -32,12 +32,9 @@ function App() {
 								</ProtectedRoute>
 							}
 						>
-							{/* "Declarative" way of navigating to a route without using any link */}
 							<Route index element={<Navigate replace to="cities" />} />
 							<Route path="cities" element={<CityList />} />
-							{/* If the URL takes the (PATH SHAPE), it will store the data from the <Link /> (reference: <CityItem />) in the :id and the :id will basically be passed to <City /> */}
 							<Route path="cities/:id" element={<City />} />
-
 							<Route path="countries" element={<CountryList />} />
 							<Route path="form" element={<Form />} />
 						</Route>

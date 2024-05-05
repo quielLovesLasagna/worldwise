@@ -20,8 +20,6 @@ function CityItem({ city }) {
 
 	return (
 		<li>
-			{/* The id is the data that we want to pass from one page to another using URL parameters */}
-			{/* After the id parameter is a query string after ?. lat and lng are simple variable names or we can think of it as parameters */}
 			<Link
 				className={`${styles.cityItem} ${
 					id === currentCity.id ? styles["cityItem--active"] : ""
